@@ -1,6 +1,7 @@
 .o-plus-minus{
 	text-align:center;
 	padding:0!important;
+	border-style: solid;
 }
 .o-plus-minus.copy{
 	display:none;

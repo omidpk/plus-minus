@@ -67,12 +67,15 @@
 				let elBorderTopWidth = el.css("border-top-width");
 				let elBorderBottomWidth = el.css("border-bottom-width");
 				let elWidth = el.width();
-				let elHeight = el.innerHeight();
+				let elInnerHeight = el.innerHeight();
+				let elHeight = el.height();
+				let elOuterHeight = el.outerHeight();
 				let item = el.attr("data-item");
 				let elContainer = $(".o-plus-minus-container[data-item='"+item+"']");
-				let arr = {elWidth:elWidth,elHeight:elHeight,item:item,elContainer:elContainer,elBorderLeftWidth:elBorderLeftWidth,elBorderTopWidth:elBorderTopWidth,elBorderRightWidth:elBorderRightWidth,elBorderBottomWidth:elBorderBottomWidth};
+				let arr = {elWidth:elWidth,elHeight:elHeight,item:item,elContainer:elContainer,elBorderLeftWidth:elBorderLeftWidth,elBorderTopWidth:elBorderTopWidth,elBorderRightWidth:elBorderRightWidth,elBorderBottomWidth:elBorderBottomWidth,elInnerHeight:elInnerHeight,elOuterHeight:elOuterHeight};
 				this.copyItem(arr);
 				this.setButtons(arr);
+				console.log(arr);
 			};
 			this.setButtons = function(e){
 				let plusBtn = '<a class="o-plus-minus-btn p-btn" style="width:'+e.elHeight+'px;height:'+e.elHeight+'px;line-height:'+e.elHeight+'px;top:'+e.elBorderTopWidth+';right:'+e.elBorderRightWidth+';">+</a>';
