@@ -1,0 +1,23 @@
+.o-plus-minus{
+	text-align:center;
+	padding:0!important;
+}
+.o-plus-minus.copy{
+	display:none;
+}
+.o-plus-minus-container{
+	position:relative;
+	display: inline-flex;
+}
+.o-plus-minus-btn{
+	display:block;
+	background:#ccc;
+	position:absolute;
+	top:0;
+	text-align:center;
+	cursor:pointer;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
